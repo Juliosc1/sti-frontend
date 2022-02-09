@@ -1,0 +1,19 @@
+{
+  "name": "sti-frontend",
+  "version": "1.0.0",
+  "description": "jsfrontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juliosc1/sti-frontend.git"
+  },
+  "author": "julio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juliosc1/sti-frontend/issues"
+  },
+  "homepage": "https://github.com/Juliosc1/sti-frontend#readme"
+}
