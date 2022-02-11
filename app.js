@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000
 const app = express()
 app.use('/healthcheck', require('./routes/healthcheck.routes'));
 
-app.use.apply(ecpress.static('public'))
+app.use.apply(express.static('public'))
 
 app.get('/', function(req, res){
     res.sendFile(__dirname + "/public/index.html")
