@@ -6,29 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
     <title>Document</title>
+
+    <style>
+        table, td {
+      border: 1px solid black;
+    }
+    </style>
 </head>
+
 <body>
     <h1>STI-Frontend</h1>
     <div id="app" />
-    <script src="/js/index.js"></script>
     
-    <table style="width:100%">
+    <table id="myTable">
         <tr>
-          <th>Company</th>
-          <th>Contact</th>
-          <th>Country</th>
-        </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
+          <td>cell</td>
+          <td>cell</td>
         </tr>
       </table>
 
+      <button onclick="myFunction()">Delete</button>
+      <button onclick="addRow()">Add</button>
+
+      <script src="js/index.js"></script>
 </body>
 </html>
