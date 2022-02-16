@@ -1,8 +1,8 @@
 function age(){
     let xhr = new XMLHttpRequest()
-    xhr.open("GET", "/js/data.jason")
+    xhr.open("GET", "/js/data.json")
     xhr.onload = function(){
-        let data = JASON.parse(this.response)
+        let data = JSON.parse(this.response)
         createTable(data)
     }
     xhr.send()
