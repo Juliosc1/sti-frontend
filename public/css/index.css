@@ -8,7 +8,7 @@ body {
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
-  background-image: url(/black.jpg);
+  background-image: url(/css/black.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
