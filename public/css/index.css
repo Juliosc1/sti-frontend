@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-image: url(/black.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+main {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  width: 1000px;
+  height: fit-content;
+  margin: 12em;
+  color: #fff;
+  position: relative;
+}
+
+/*start text*/
+.container .homepage {
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+
+.container h1 {
+  font-family: "Times New Roman";
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 9%;
+  letter-spacing: 2px;
+}
+
+.container h2 {
+  font-family: "Times New Roman";
+  font-size: 25px;
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  letter-spacing: 1.5px;
+}
+
+/*texten GameNordic*/
+.container span {
+  color: #ff7200;
+  font-size: 65px;
+}
+
+.form {
+  width: 250px;
+  height: 380px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  position: absolute;
+  top: -20px;
+  left: 870px;
+  transform: translate(0%, -5%);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.form h2 {
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #ff7200;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.form input {
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #ff7200;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+}
+
+.button {
+  width: 240px;
+  height: 40px;
+  background: #ff7200;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+
+.btnn:hover {
+  background: #fff;
+  color: #ff7200;
+}
+.btnn a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.form .link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form .link a {
+  text-decoration: none;
+  color: #ff7200;
+}
+
+/*ROCK PAPER SCISSORS*/
+
+.rps-h1{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 40px;
+    color: #fff;
+}
+
+input {
+  outline: none;
+  font-size: 1rem;
+  padding: 0 5px;
+}
+
+/*Spel plattform*/
+.rps-container {
+  background-color: #fff;
+  width: 400px;
+  height: 600px;
+  max-height: 600px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+}
+
+#events {
+  flex-grow: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid lightgrey;
+  overflow-y: scroll;
+}
+
+#events li {
+  padding: 10px 10px 10px 10px;
+}
+
+/*chat rutan*/
+.chat-window {
+  padding: 10px;
+  background-color: orange;
+}
+
+.chat-window form {
+  display: flex;
+}
+
+/*I chat rutan*/
+.chat-window form input {
+  color: #ff7200;
+  font-size: 1rem;
+  margin: 0 10px 0 0;
+  padding: 0 5px;
+  flex-grow: 1;
+}
+
+/*knappen-Say*/
+.chat-window form button {
+  width: 80px;
+}
+
+.button-window {
+  display: flex;
+  padding: 10px 50px;
+  justify-content: space-evenly;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 3px 15px;
+  color: #fff;
+  line-height: 25px;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+  transition: all 150ms ease-in;
+  outline: none;
+}
+
+button:hover {
+  background-color: #79d7e4;
+}
+
+button.turn {
+  color: rgb(255, 64, 129);
+  background-color: white;
+  box-shadow: none;
+}
+
+button.turn:hover {
+  background-color: #eaeaea;
+}
