@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
-    <title>Document</title>
+    <title>GameNordic</title>
+  </head>
 
-    <style>
-        table, td {
-      border: 1px solid black;
-    }
-    </style>
-</head>
-
-<body>
-  <div id="app" />
-  <script src="js/index.js"></script>
-  <div class="main">
-
-    <nav></nav>
-    <main class="container">
-    
-      
-      <h1>Welcome to <span>GameNordic</span></h1>
-      <h2>Rock Paper Scissors</h2>
-      <p class="homepage">Rock paper scissors is a hand game, <br>
-        played between two people, in which each player simultaneously forms <br>
-        one of three shapes with an outstretched hand.</p>
-
-      <div class="form">
-        <h2>Login Here</h2>
-        <input type="email" name="email" placeholder="Enter email here">
-        <input type="password" name="" placeholder="Enter password here">
-        <button class="button"><a href="rps-game.html">Login</a></button>
-
-        <br>
-        <br>
-        <p class="link">Don't have an account<br>
-        <a href="#">Sign up</a> here</p>
-        
-      </div>
-
-      
-    
-      
-    
-
-    </main>
-
-    <footer>
-      <p>Copyright &copy; 2022 GameNordic J.S</p>
-    </footer>
-  </div>
+  <body>
+    <div id="app" />
   
-</body>
+    <!-- <button onclick="myFunction()">Delete</button>
+    <button onclick="addRow()">Add</button> -->
+    <div class="main">
+      <nav></nav>
+      <main class="container">
+        <h1>Welcome to <span>GameNordic</span></h1>
+        <h2>Rock Paper Scissors</h2>
+        <p class="homepage">Rock paper scissors is a hand game, <br>
+          played between two people, in which each player simultaneously forms <br>
+          one of three shapes with an outstretched hand.</p>
+          
+         
+
+        <div class="form">
+          <h2>Login Here</h2>
+
+          
+         
+          <input type="text" name="name" placeholder="Enter your name here">
+          <input type="button" onClick="namegame();" value="play the name game!">
+          <button class="button"><a href="rps-game.html">Login</a></button>
+     
+
+          <br>
+          <br>
+          <p class="link">Don't have an account<br>
+          <a href="#">Sign up</a> here</p>
+          
+        </div>
+      </main>
+      
+      <footer>
+        <p>Copyright &copy; 2022 GameNordic J.S</p>
+      </footer>
+    </div>
+    
+    <script src="js/rps-game.js"></script>
+  
+  </body>
 </html>
