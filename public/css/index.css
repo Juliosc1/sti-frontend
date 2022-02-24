@@ -412,3 +412,21 @@ td
 .gameoverH1{
   color: white;
 }
+
+input, button {
+  padding: 7px;
+  height: 40px;
+  color: #e14a67;
+}
+
+legend {
+  color: white;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+#lsOutput{
+  color: white;
+}
