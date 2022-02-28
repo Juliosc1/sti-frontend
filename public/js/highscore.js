@@ -4,7 +4,8 @@ age();
 function age(){
     console.log("running age");
     let xhr = new XMLHttpRequest()
-    xhr.open("GET", "http://localhost:3001/highscore")
+    xhr.open("GET", "https://julio-backend.herokuapp.com/highscore")
+    //xhr.open("GET", "http://localhost:3001/highscore")
     //xhr.open("GET", "/js/data.json")
     xhr.onload = function(){
         let data = JSON.parse(this.response)
