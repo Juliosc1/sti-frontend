@@ -52,21 +52,18 @@ function game(UserChoice){
 
 //GameOver funktion till highscore LocalStorage
  function gameRound() {
-	if(gameSet <= 4){
+	if(gameSet <= 3){
 		gameSet++;
 	
 	} else {
 		console.log('Game Over');
 		this.toggleScreen('gameoverScreen',true);
-		
-    	// document.location.reload();
-    	// clearInterval(interval); 
 	}
 } 
 
 function playAgin() {
 	document.location.reload();
-    clearInterval(interval); 
+    clear(UserPoints); 
 }
 
 

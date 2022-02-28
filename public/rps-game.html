@@ -46,6 +46,7 @@
   </div>
 
     <div class="flex-container">
+      
       <div class="box2">
         <!--Highscore tabell via localstorage -->
         <!--<fieldset>
@@ -53,6 +54,13 @@
           <div id="lsOutput"></div>
         </fieldset> -->
 
+        <table id="highscoreTable">
+          <h3>Highscore</h3>
+        </table>
+    </div>
+
+    <div class="box3">
+      <div class="gameContainer">
         <canvas id="canvas" style='display:none'></canvas>
         <div id="gameoverScreen" class="screen" style="display: none;">
         <h1 class="GameoverH1">Game Over</h1>
@@ -62,14 +70,6 @@
           <button type="button" id="btnInsert" onclick="playAgin()">Play Agin</button>
       </fieldset>
       </div>
-        <table id="highscoreTable">
-          <h3>Highscore</h3>
-        </table>
-    </div>
-
-    <div class="box3">
-      <div class="gameContainer">
-        
         <div class="scoreContainer">
           <span class="user">
             
