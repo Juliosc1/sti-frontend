@@ -18,7 +18,7 @@ function createTable(data){
     let aTable = document.createElement("table")
     appElement.appendChild(aTable)
     aTable.appendChild(createRow(data[0].name, data[0].score))
-    aTable.appendChild(createRow(data[1].name, data[1].UserPoints))
+    aTable.appendChild(createRow(data[1].name, data[1].score))
     aTable.appendChild(createRow(data[2].name, data[2].score))
     aTable.appendChild(createRow(data[3].name, data[3].score))
     aTable.appendChild(createRow(data[4].name, data[4].score))
@@ -28,7 +28,7 @@ function createTable(data){
 function createRow(name, score){
     let aRow = document.createElement("tr")
     aRow.appendChild(createCell(name))
-    aRow.appendChild(createCell(UserPoints))
+    aRow.appendChild(createCell(score))
     return aRow
 }
 
@@ -45,10 +45,8 @@ function createCell(content){
     return aHead
 } */
 
-
-
 /*Highscore table version 2*/
-function addRow() {
+/* function addRow() {
 				  
 	var myName = document.getElementById("playerName");
 	var table = document.getElementById("highscoreTable");
@@ -59,19 +57,21 @@ function addRow() {
 	row.insertCell(0).innerHTML= '<input type="button" value = "Delete" onClick="Javacsript:deleteRow(this)">';
 	row.insertCell(1).innerHTML= myName.value;
 	row.insertCell(2).innerHTML= UserPoints;
-
 }
 
 function deleteRow(obj) {
   
     var index = obj.parentNode.parentNode.rowIndex;
     var table = document.getElementById("highscoreTable");
-    table.deleteRow(index);
+    table.deleteRow(index); 
     
-}
-/*HIGHSCORE VERSION 3*/
+}*/
 
-const inpKey = document.getElementById("inpKey");
+
+
+/*HIGHSCORE VERSION 3 - LocalStorage*/
+
+/* const inpKey = document.getElementById("inpKey");
 var inpValue = UserPoints;
 const btnInsert = document.getElementById("btnInsert");
 const lsOutput = document.getElementById("lsOutput");
@@ -86,10 +86,9 @@ btnInsert.onclick = function() {
     }
 };
 
-
 for (let i = 0; i<localStorage.length; i++){
     const key = localStorage.key(i);
     const value = localStorage.getItem(key);
 
     lsOutput.innerHTML += `${key}: ${value}<br />`;
-} 
+}  */

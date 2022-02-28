@@ -120,7 +120,7 @@ footer {
 .button {
   width: 240px;
   height: 40px;
-  background: linear-gradient(135deg, #ffcf1b, #ff8b1b);;
+  background: linear-gradient(135deg, #ffcf1b, #ff8b1b);
   border: none;
   margin-top: 30px;
   font-size: 18px;
@@ -151,9 +151,6 @@ footer {
   color: #ff7200;
 }
 
-
-
-
 /*RPS-Game*/
 #name {
   color: greenyellow;
@@ -167,11 +164,11 @@ footer {
   flex-wrap: wrap;
 }
 
-.box2{
+.box2 {
   width: 250px;
 }
 
-.box3{
+.box3 {
   width: 800px;
 }
 
@@ -197,11 +194,10 @@ footer {
   background: linear-gradient(135deg, #ffcf1b, #ff8b1b);
 }
 
-
-#highscoreTable{
+#highscoreTable {
   border: 5px solid gold;
 }
-h3{
+h3 {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -209,14 +205,13 @@ h3{
 }
 
 /*Tabel i sti-backend*/
-table { 
+table {
   margin: 30px;
   background: linear-gradient(135deg, #ffcf1b, #ff8b1b);
   border-radius: 10px;
 }
 
-td
-{
+td {
   margin: 5px;
   padding: 0%;
   height: 5vh;
@@ -262,7 +257,6 @@ td
   width: 50px;
   height: 20px;
   padding: 2px;
-  
 }
 .gameButtons {
   width: 280px;
@@ -408,15 +402,31 @@ td
   transition: 0.3s;
 }
 
-
-.gameoverH1{
+.GameoverH1 {
   color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-input, button {
+#inpKey {
+  height: 20px;
+}
+
+#btnInsert {
+  height: 40px;
+  background-color: #34495e;
+  color: #fff;
+  
+}
+
+input,
+button {
+  margin: 10px;
   padding: 7px;
   height: 40px;
-  color: #e14a67;
+  border-radius: 10px;
+  border: 1px solid #34495e;
 }
 
 legend {
@@ -424,9 +434,14 @@ legend {
 }
 
 fieldset {
-  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 10px;
+  background: linear-gradient(135deg, #ffcf1b, #ff8b1b);
+  border: 5px solid gold;
+  border-radius: 10px;
+  text-align: center;
 }
 
-#lsOutput{
+#lsOutput {
   color: white;
 }

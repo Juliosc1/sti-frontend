@@ -16,7 +16,6 @@
       <input type="button" onClick="namegame();" value="play the name game!">
     </form> -->
   
-    
 <!-- <div id="mydata">
 <b>Current data in the system ...</b>
 <table id="myTableData"  border="1" cellpadding="2">
@@ -28,18 +27,8 @@
 </table>
 &nbsp;
 </div> -->
- 
-<canvas id="canvas" style='display:none'></canvas>
-<div id="gameoverScreen" class="screen" style="display: none;">
-<h1 class="GameoverH1">Game Over</h1>
-<h2 id="title">Local Storage - javascript</h2>
-    <fieldset>
-        <legend>Insert Data</legend>
-        <input id="inpKey" type="text" placeholder="Enter name">
-        <!-- <input id="inpValue" type="text" placeholder="Enter value..."> -->
-        <button type="button" id="btnInsert">Insert Data</button>
-    </fieldset>
 
+<!--Highscore-->
 <!-- <div id="myform">
   <table>
       <tr>
@@ -49,9 +38,6 @@
       </tr>
   </table>
   </div> -->
-</div>
-
-
 
     <div class="flex-container">
       <div class="header">
@@ -59,17 +45,26 @@
     </div>
   </div>
 
- 
-
     <div class="flex-container">
       <div class="box2">
-        <fieldset>
-          <legend>Highscore (local storage)</legend>
-          <div id="lsOutput"></div>
-        </fieldset>
-        <!-- <table id="highscoreTable">
+        <!--Highscore tabell via localstorage -->
+        <!--<fieldset>
           <h3>Highscore</h3>
-        </table> -->
+          <div id="lsOutput"></div>
+        </fieldset> -->
+
+        <canvas id="canvas" style='display:none'></canvas>
+        <div id="gameoverScreen" class="screen" style="display: none;">
+        <h1 class="GameoverH1">Game Over</h1>
+        <fieldset>
+           <!-- <input id="inpKey" type="text" placeholder="Enter name">  -->
+          <!-- <input id="inpValue" type="text" placeholder="Enter value..."> -->
+          <button type="button" id="btnInsert" onclick="playAgin()">Play Agin</button>
+      </fieldset>
+      </div>
+        <table id="highscoreTable">
+          <h3>Highscore</h3>
+        </table>
     </div>
 
     <div class="box3">

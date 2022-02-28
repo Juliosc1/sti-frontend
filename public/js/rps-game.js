@@ -47,21 +47,29 @@ function game(UserChoice){
 	}
 	setTimeout(continuGame, 1500); //Timer resultatet försvinner
 	console.log("next round")
+
 }
 
-function gameRound() {
+//GameOver funktion till highscore LocalStorage
+ function gameRound() {
 	if(gameSet <= 4){
 		gameSet++;
 	
 	} else {
 		console.log('Game Over');
-		// alert("GAME OVER " + UserPoints + " " + ComPoints);
 		this.toggleScreen('gameoverScreen',true);
 		
-    	/*document.location.reload();
-    	clearInterval(interval); */
+    	// document.location.reload();
+    	// clearInterval(interval); 
 	}
+} 
+
+function playAgin() {
+	document.location.reload();
+    clearInterval(interval); 
 }
+
+
 
 function toggleScreen(id,toggle) {
 	let element = document.getElementById(id);
